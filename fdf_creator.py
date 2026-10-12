@@ -306,8 +306,8 @@ DFTD3.BJdamping {grimme}"""+"\n"+"\n")
 
 ###############################################################
 
-    no_save_dm = str(args.no_save_dm) if args.no_save_dm is not None else "True"
-    save_xv = str(args.save_xv) if args.save_xv is not None else "False"
+    no_save_dm = "False" if not args.no_save_dm else "True"
+    save_xv = "True" if args.save_xv else "False"
 
     f.write(f"""############################################################Re-Run Output Informations############################################################
 
